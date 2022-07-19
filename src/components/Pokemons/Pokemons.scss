@@ -1,0 +1,91 @@
+.pokemons {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  float: left;
+
+  &_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 160px;
+    padding: 10px 10px 50px;
+    border: 1px solid black;
+  
+    &:nth-child(3n + 3) {
+      margin-right: calc(100% - 700px);
+    }
+  }
+
+  &_photo {
+    margin: 0 auto;
+  }
+
+  &_name {
+    margin: 10px auto;
+    font-weight: bold;
+  }
+
+  &_types {
+    display: inline-block;
+    margin-right: 5px;
+    width: 60px;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+  }
+}
+
+.fire {
+  background-image: linear-gradient(to right, #D31027 0%, #e45667  51%, #D31027  100%);
+}
+
+.grass {
+  background-image: linear-gradient(to right, #56ab2f 0%, #a8e063  51%, #56ab2f  100%);
+}
+
+.poison {
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+}
+
+.flying {
+  background-image: linear-gradient(to right, #4CA1AF 0%, #C4E0E5  51%, #4CA1AF  100%);
+}
+
+.water {
+  background-image: linear-gradient(to right, #00d2ff 0%, #24b5e1  51%, #00d2ff  100%);
+}
+
+.bug {
+  background-image: linear-gradient(to right, #b40606 0%, #c62d2d  51%, #b40606  100%);
+}
+
+.fairy {
+  background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%);
+}
+
+.ground {
+  background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%);
+}
+
+.electric {
+  background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+}
+
+.button {
+  width: 566px;
+  padding: 10px 0;
+  border: 1px solid black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #008cff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+

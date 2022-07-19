@@ -1,0 +1,34 @@
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+  margin: 250px 200px 250px 0;
+  padding: 10px 10px 20px;
+
+  border: 1px solid black;
+
+  &_photo {
+    width: 250px;
+  }
+
+  &_name {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  &_details {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+
+  &_detail {
+    border: 1px solid black;
+  }
+}
+
+table, tr, th {
+  border: 1px solid black;
+  font-weight: normal;
+  padding: 5px 20px;
+}
