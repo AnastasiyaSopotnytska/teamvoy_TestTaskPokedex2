@@ -1,27 +1,12 @@
 import React from 'react';
 import './App.scss';
-
-interface Props {
-  onClick: () => void;
-}
-
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
+import { Pokemons } from './components/Pokemons';
 
 export const App: React.FC = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
+    <div className="main">
+      <h1 className="main_title">Pokedex</h1>
+      <Pokemons />
     </div>
   );
 };
